@@ -53,6 +53,8 @@ header nav li {
   height: 100%;
 }
 
+
+
 .banner p {
   background-color: gray;
   color: white;
@@ -129,4 +131,92 @@ header nav li {
 
 #guest {
   background-color: lightgray;
+}
+
+/* Courses */
+
+#course-sec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.courses {
+  background-color: lightgray;
+}
+
+.courses h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+
+
+.core {
+  margin-right: 2rem;
+  width: 25%;
+  background-color: white;
+  margin-bottom: 1rem;
+
+}
+
+.core img {
+  width: 100%;
+}
+
+.core h3, .core p {
+  margin-left: 1rem;
+}
+.core h3 {
+  margin-top: 1rem;
+}
+
+.core p {
+  margin-top: 0.5rem;
+}
+
+.core .descrip {
+  margin-bottom: 1.5rem;
+}
+
+/* Thesis */
+
+#thesis h1 {
+  text-align: center;
+}
+
+#thesis-section {
+  display: flex;
+}
+
+#vid-sec {
+  width: 60%;
+  margin-left: 1.5rem;
+  margin-right: 1rem;
+}
+
+
+#vid-sec video {
+  width: 100%;
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+#left-f {
+  margin-left: 1.5rem;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li:last-child {
+  margin-left: 0.5rem;
+  margin-right: 1.5rem;
 }
