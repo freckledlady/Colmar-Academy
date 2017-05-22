@@ -7,6 +7,10 @@ html {
   padding: 0;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
 
 /* Header */
 header {
@@ -31,8 +35,30 @@ header nav li {
   margin-right: 1rem;
 }
 
+#mobile {
+  display: none;
+}
+
 #sign-in {
   margin-right: 1.5rem;
+}
+
+@media only screen and (max-width: 470px) {
+  #full {
+    display: none;
+  }
+
+  #mobile {
+    display: unset;
+
+  }
+
+  #mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+  }
 }
 
 /* Banner */
@@ -53,7 +79,10 @@ header nav li {
   height: 100%;
 }
 
-
+#banner-text {
+  margin-right: 2.5rem;
+  width: 25%;
+}
 
 .banner p {
   background-color: gray;
@@ -61,6 +90,46 @@ header nav li {
   padding-top: .5rem;
   padding-bottom: .5rem;
   text-align: center;
+}
+
+.banner h3 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 470px) {
+
+  .banner {
+    display: block;
+    width: 100%;
+  }
+
+  #banner-img-div {
+    height: 11.25rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  #banner-img-div img {
+    size: cover;
+  }
+
+  #banner-text {
+    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-bottom: 2rem;
+    
+  }
+
+  #banner-text h1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  #banner-text p {
+    margin-top: 1.5rem;
+  }
 }
 
 /* Information */
@@ -78,11 +147,11 @@ header nav li {
 
 #info-main img {
   width: 100%;
-  margin-bottom: 2rem;
   margin-top: 2rem;
 }
 
 #info-main h1 {
+  margin-top: 2rem;
   margin-bottom: 1.5rem;
 }
 
@@ -133,12 +202,51 @@ header nav li {
   background-color: lightgray;
 }
 
+#information-mobile {
+  display: none;
+}
+
+
+@media only screen and (max-width: 470px) {
+  #info-main {
+    display: none;
+  }
+
+  #info-side {
+    display: none;
+  }
+
+  #information-mobile {
+    display: unset;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid gray;
+  }
+
+  .sec {
+    margin: 1rem;
+  }
+
+  .sec img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .sec h3,
+  .sec p {
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+
+}
+
 /* Courses */
 
 #course-sec {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 2rem;
 }
 
 .courses {
@@ -146,9 +254,9 @@ header nav li {
 }
 
 .courses h1 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 
@@ -180,10 +288,50 @@ header nav li {
   margin-bottom: 1.5rem;
 }
 
+#course-sec-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+  .courses {
+    background-color: white;
+    padding-bottom: 2rem;
+    border: 1px solid gray;
+  }
+
+  .courses h1 {
+    padding-bottom: 1rem;
+  }
+
+  #course-sec {
+    display: none;
+  }
+
+  #course-sec-mobile {
+    display: unset;
+
+
+  }
+
+  #course-sec-mobile h3 {
+    background-color: lightgray;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
 /* Thesis */
+
+#thesis {
+  margin-bottom: 2rem;
+}
 
 #thesis h1 {
   text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 #thesis-section {
@@ -199,6 +347,27 @@ header nav li {
 
 #vid-sec video {
   width: 100%;
+}
+
+#vid-sec h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 470px) {
+
+  #thesis-side {
+    display: none;
+  }
+
+  #vid-sec h3,
+  #vid-sec p {
+    display: none;
+  }
+
+  #vid-sec {
+    width: 100%;
+  }
 }
 
 /*Footer*/
@@ -219,4 +388,15 @@ nav li {
 nav li:last-child {
   margin-left: 0.5rem;
   margin-right: 1.5rem;
+}
+
+@media only screen and (max-width: 470px) {
+  footer nav {
+    display: none;
+  }
+
+  footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
