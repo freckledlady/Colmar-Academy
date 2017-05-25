@@ -1,5 +1,6 @@
 html {
   font-size: 16px;
+  font-family: Lato;
 }
 
 * {
@@ -18,6 +19,13 @@ header {
   justify-content: space-between;
   height: 4rem;
   align-items: center;
+  background-color: #B2DFDB;
+  border-bottom: 1px solid black;
+
+}
+
+header span {
+  font-weight: bold;
 }
 
 header p {
@@ -55,6 +63,7 @@ header nav li {
 
   #mobile ul {
     display: flex;
+    background-color: #B2DFDB;
     justify-content: space-around;
     align-items: center;
     height: 4rem;
@@ -64,19 +73,22 @@ header nav li {
 /* Banner */
 
 .banner {
-  background-color: lightgray;
+  background-color: #00796B;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid black;
 }
 
 #banner-img-div {
   margin: 2rem 2.5rem 2rem 1.5rem;
   width: 60%;
+
 }
 
 #banner-img-div img {
   width: 100%;
   height: 100%;
+  border: 1px solid black;
 }
 
 #banner-text {
@@ -85,16 +97,21 @@ header nav li {
 }
 
 .banner p {
-  background-color: gray;
-  color: white;
+  background-color: #64FFDA;
   padding-top: .5rem;
   padding-bottom: .5rem;
   text-align: center;
+  border: 1px solid black;
 }
 
 .banner h3 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.banner h1 {
+  color: #B2DFDB;
+  font-weight: 900;
 }
 
 @media only screen and (max-width: 470px) {
@@ -115,11 +132,11 @@ header nav li {
   }
 
   #banner-text {
-    width: 100%;
+    width: 90%;
     margin-left: 1rem;
     margin-right: 1rem;
     padding-bottom: 2rem;
-    
+
   }
 
   #banner-text h1 {
@@ -136,6 +153,9 @@ header nav li {
 
 .information {
   display: flex;
+  background-color: lightgray;
+  background-color: #B2DFDB;
+  border-bottom: 1px solid black;
 }
 
 
@@ -143,11 +163,13 @@ header nav li {
   width: 60%;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  padding-bottom: 2rem;
 }
 
 #info-main img {
   width: 100%;
   margin-top: 2rem;
+  border: 1px solid black;
 }
 
 #info-main h1 {
@@ -160,15 +182,17 @@ header nav li {
 }
 
 #info-side {
-  border-left: 1px solid gray;
-  border-right: 1px solid gray;
+  border-left: 1px solid black;
 }
 
 .side-sec {
-  width: 26.4375rem;
+  width: 423px;
+  padding-right: 50px;
+  overflow: hidden;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid gray;
+
+  border-bottom: 1px solid black;
 }
 
 .side-img{
@@ -184,6 +208,7 @@ header nav li {
 .side-img img {
   width: 100%;
   height: 100%;
+  border: 1px solid black;
 }
 
 .side-text {
@@ -194,13 +219,13 @@ header nav li {
   margin-bottom: 0.5rem;
 }
 
-.side-text .read {
+.read {
   margin-top: 0.5rem;
+  text-decoration: underline;
+  color: #00796B;
 }
 
-#guest {
-  background-color: lightgray;
-}
+
 
 #information-mobile {
   display: none;
@@ -219,7 +244,7 @@ header nav li {
   #information-mobile {
     display: unset;
     padding-bottom: 2rem;
-    border-bottom: 1px solid gray;
+
   }
 
   .sec {
@@ -229,6 +254,7 @@ header nav li {
   .sec img {
     width: 100%;
     margin-bottom: 1rem;
+    border: 1px solid black;
   }
 
   .sec h3,
@@ -250,7 +276,8 @@ header nav li {
 }
 
 .courses {
-  background-color: lightgray;
+  background-color: #4DB6AC;
+  border-bottom: 1px solid black;
 }
 
 .courses h1 {
@@ -266,7 +293,7 @@ header nav li {
   width: 25%;
   background-color: white;
   margin-bottom: 1rem;
-
+  border: 1px solid black;
 }
 
 .core img {
@@ -294,9 +321,8 @@ header nav li {
 
 @media only screen and (max-width: 470px) {
   .courses {
-    background-color: white;
+    background-color: #4DB6AC;
     padding-bottom: 2rem;
-    border: 1px solid gray;
   }
 
   .courses h1 {
@@ -309,12 +335,12 @@ header nav li {
 
   #course-sec-mobile {
     display: unset;
-
-
   }
 
+
   #course-sec-mobile h3 {
-    background-color: lightgray;
+    background-color: #A7FFEB;
+    border: 1px solid black;
     padding: 1rem;
     margin-bottom: 0.5rem;
     margin-left: 1rem;
@@ -325,7 +351,9 @@ header nav li {
 /* Thesis */
 
 #thesis {
-  margin-bottom: 2rem;
+
+  background-color: #B2DFDB;
+  border-bottom: 1px solid black;
 }
 
 #thesis h1 {
@@ -336,6 +364,7 @@ header nav li {
 
 #thesis-section {
   display: flex;
+  padding-bottom: 2rem;
 }
 
 #vid-sec {
@@ -347,6 +376,7 @@ header nav li {
 
 #vid-sec video {
   width: 100%;
+  border: 1px solid black;
 }
 
 #vid-sec h3 {
@@ -375,6 +405,9 @@ header nav li {
 footer {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  background-color: #B2DFDB;
 }
 
 #left-f {
