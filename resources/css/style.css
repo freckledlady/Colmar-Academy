@@ -41,6 +41,11 @@ header #logo {
 header nav li {
   display: inline-block;
   margin-right: 1rem;
+  transition: color 0.5s linear 100ms;
+}
+
+header nav li:hover {
+  color: #fff;
 }
 
 #mobile {
@@ -102,6 +107,13 @@ header nav li {
   padding-bottom: .5rem;
   text-align: center;
   border: 1px solid black;
+  transition: background-color 1s linear 200ms, color 1s linear 200ms, border-color 1s linear 200ms ;
+}
+
+.banner p:hover {
+  background-color: #00796B;
+  color: #B2DFDB;
+  border-color: #B2DFDB;
 }
 
 .banner h3 {
@@ -153,7 +165,6 @@ header nav li {
 
 .information {
   display: flex;
-  background-color: lightgray;
   background-color: #B2DFDB;
   border-bottom: 1px solid black;
 }
@@ -191,7 +202,6 @@ header nav li {
   overflow: hidden;
   display: flex;
   align-items: center;
-
   border-bottom: 1px solid black;
 }
 
@@ -223,9 +233,12 @@ header nav li {
   margin-top: 0.5rem;
   text-decoration: underline;
   color: #00796B;
+  transition: color 1s linear 200ms;
 }
 
-
+.read:hover {
+  color: #000;
+}
 
 #information-mobile {
   display: none;
@@ -286,14 +299,17 @@ header nav li {
   padding-bottom: 2rem;
 }
 
-
-
 .core {
   margin-right: 2rem;
   width: 25%;
-  background-color: white;
+  background-color: #fff;
   margin-bottom: 1rem;
   border: 1px solid black;
+  transition: background-color 1s linear 200ms;
+}
+
+.core:hover {
+  background-color: #B2DFDB;
 }
 
 .core img {
